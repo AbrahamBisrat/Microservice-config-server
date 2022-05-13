@@ -27,6 +27,6 @@ spring:
 logging:
   file:
     name: /Coding/Logging/${spring.application.name}/log
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${random.uuid} # unique for each instance
+#eureka:
+#  instance:
+#    instance-id: ${spring.application.name}:${random.uuid} # unique for each instance
