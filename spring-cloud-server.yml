@@ -1,18 +1,18 @@
-server:
-  port: 0 # dynamically auto-magically assign free port - This will help with Load balancing
+#server:
+#  port: 0 # dynamically auto-magically assign free port - This will help with Load balancing
           # Having multiple instances of the same service
 spring:
-  application:
-    name: spring-cloud-server
+#  application:
+#    name: spring-cloud-server
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
     hikari:
       maximum-pool-size: 10
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
+#  cloud:
+#    loadbalancer:
+#      ribbon:
+#        enabled: false
   jpa:
     show-sql: true
     hibernate:
