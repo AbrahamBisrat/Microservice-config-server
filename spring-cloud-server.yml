@@ -22,4 +22,4 @@ logging:
   file:
     name: /Coding/Logging/${spring.application.name}/log
 test:
-  name: Elayee
+  name: Elaye
