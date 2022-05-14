@@ -21,3 +21,5 @@ spring:
 logging:
   file:
     name: /Coding/Logging/${spring.application.name}/log
+test:
+  name: Elaye
