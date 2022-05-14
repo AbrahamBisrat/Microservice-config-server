@@ -5,6 +5,9 @@ spring:
   cloud:
     vault:
       token: hvs.AcnzRzHYehiXhMnRQsTQW3tS
+  rabbitmq:
+    host: localhost
+    port: 5672
 logging:
   file:
     name: /Coding/Logging/${spring.application.name}/log
