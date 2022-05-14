@@ -9,7 +9,9 @@ spring:
     initialization-mode: always
     hikari:
       maximum-pool-size: 10
-#  cloud:
+  cloud:
+    vault:
+      token: hvs.AcnzRzHYehiXhMnRQsTQW3tS
 #    loadbalancer:
 #      ribbon:
 #        enabled: false
