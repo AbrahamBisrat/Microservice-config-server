@@ -1,20 +1,9 @@
-#server:
-#  port: 0 # dynamically auto-magically assign free port - This will help with Load balancing
-          # Having multiple instances of the same service
 spring:
-#  application:
-#    name: spring-cloud-server
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
     hikari:
       maximum-pool-size: 10
-#  cloud:
-#    vault:
-#      token: hvs.AcnzRzHYehiXhMnRQsTQW3tS
-#    loadbalancer:
-#      ribbon:
-#        enabled: false
   jpa:
     show-sql: true
     hibernate:
@@ -26,9 +15,9 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.MySQL8Dialect
+  rabbitmq:
+    host: localhost
+    port: 5672
 logging:
   file:
     name: /Coding/Logging/${spring.application.name}/log
-#eureka:
-#  instance:
-#    instance-id: ${spring.application.name}:${random.uuid} # unique for each instance
